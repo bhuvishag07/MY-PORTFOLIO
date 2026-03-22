@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Bhuvisha Gohil – First Year Student | Aspiring AI & Data Science Engineer. Explore projects, skills, and get in touch." />
+    <title>Bhuvisha Gohil | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ─── NAVIGATION ─── -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <span class="nav-logo">&lt;BG /&gt;</span>
+            <ul class="nav-links">
+                <li><a href="#about" id="nav-about">About</a></li>
+                <li><a href="#projects" id="nav-projects">Projects</a></li>
+                <li><a href="#skills" id="nav-skills">Skills</a></li>
+                <li><a href="#system" id="nav-system">System</a></li>
+                <li><a href="#contact" id="nav-contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ─── HERO ─── -->
+    <section id="hero">
+        <div class="hero-particles" id="particles"></div>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-pre">👋 Hello, World! I'm</p>
+                <h1 class="hero-name">BHUVISHA<br /><span class="gradient-text">GOHIL</span></h1>
+                <p class="hero-title">First Year Student</p>
+                <p class="hero-tagline">Exploring <span class="accent">Data Science &amp; AI</span></p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary" id="btn-view-projects">View Projects</a>
+                    <a href="#contact" class="btn btn-outline" id="btn-contact-me">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="glow-orb"></div>
+                <div class="hero-card glass-card">
+                    <div class="card-dot dot-red"></div>
+                    <div class="card-dot dot-yellow"></div>
+                    <div class="card-dot dot-green"></div>
+                    <div class="card-code">
+                        <p class="code-line"><span class="c-keyword">while</span><span class="c-punct">(</span><span class="c-string">true</span><span class="c-punct">) {</span></p>
+                        <p class="code-line indent"><span class="c-var">learn</span><span class="c-punct">();</span></p>
+                        <p class="code-line indent"><span class="c-var">build</span><span class="c-punct">();</span></p>
+                        <p class="code-line indent"><span class="c-var">improve</span><span class="c-punct">();</span></p>
+                        <p class="code-line"><span class="c-punct">}</span></p>
+                        <p class="code-line blink-line"><span class="c-comment">// always learning...</span><span class="cursor">▌</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ─── ABOUT ─── -->
+    <section id="about">
+        <div class="container">
+            <div class="section-tag">01. About Me</div>
+            <h2 class="section-title">Who Am I?</h2>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Hey there! I'm <strong>Bhuvisha Gohil</strong>, a first-year student with an insatiable curiosity
+                        for technology and how it shapes our world. I'm on a mission to turn complex data into
+                        meaningful insights and build intelligent systems that solve real-world problems.</p>
+                    <p>Currently diving deep into programming fundamentals — from writing my first Python scripts to
+                        exploring data structures in C++. I'm fascinated by the intersection of <span
+                            class="accent">Artificial Intelligence</span> and <span class="accent">Data Science</span>,
+                        and I'm actively building my foundation to one day contribute to cutting-edge research and
+                        products.</p>
+                    <p>When I'm not coding, you'll find me exploring datasets, taking online courses, or geeking out
+                        over the latest breakthroughs in machine learning. Every line of code is one step closer to my
+                        goals.</p>
+                    <div class="about-badges">
+                        <span class="badge">🎓 First Year</span>
+                        <span class="badge">🤖 AI Enthusiast</span>
+                        <span class="badge">📊 Data Nerd</span>
+                        <span class="badge">💡 Problem Solver</span>
+                    </div>
+                </div>
+
+                <div class="about-stats">
+                    <div class="stat-card glass-card">
+                        <span class="stat-num accent">20+</span>
+                        <span class="stat-label">Projects Built</span>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <span class="stat-num accent">7</span>
+                        <span class="stat-label">Skills Learned</span>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <span class="stat-num accent">∞</span>
+                        <span class="stat-label">Curiosity</span>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <span class="stat-num accent">1st</span>
+                        <span class="stat-label">Year Student</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── PROJECTS ─── -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-tag">02. Projects</div>
+            <h2 class="section-title">What I've Built</h2>
+            <p class="section-sub">Real projects from my GitHub — built while learning and pushing my limits every day.
+            </p>
+
+            <div class="projects-grid">
+
+                <!-- ── CARD 1: Car Parking Management System ── -->
+                <a href="https://github.com/bhuvishag07/CAR-PARKING-MANAGEMENT-SYSTEM-C-" target="_blank" rel="noopener noreferrer"
+                    class="project-card glass-card featured project-link" id="project-1">
+                    <div class="project-img-wrap">
+                        <img src="parking.png" alt="Car Parking Management System" class="project-img"
+                            loading="lazy" />
+                    </div>
+                    <div class="project-body">
+                        <div class="featured-label">⭐ Top Project</div>
+                        <div class="project-top">
+                            <h3 class="project-title">Car Parking Management System</h3>
+                            <span class="icon-link" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg>
+                            </span>
+                        </div>
+                        <p class="project-desc">A C++ console-based system that manages parking slots in real-time —
+                            allocates, tracks and releases slots with occupancy reporting and data persistence.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">OOP</span>
+                            <span class="tech-tag">File I/O</span>
+                            <span class="tech-tag">Data Structures</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- ── CARD 2: Tic Tac Toe ── -->
+                <a href="https://github.com/bhuvishag07/TIC-TAC-TOE-FINAL-PROJECT" target="_blank" rel="noopener noreferrer"
+                    class="project-card glass-card project-link" id="project-2">
+                    <div class="project-img-wrap">
+                        <img src="tictactoe.png" alt="Tic Tac Toe Game" class="project-img" loading="lazy" />
+                    </div>
+                    <div class="project-body">
+                        <div class="project-top">
+                            <h3 class="project-title">Tic Tac Toe – Final Project</h3>
+                            <span class="icon-link" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg>
+                            </span>
+                        </div>
+                        <p class="project-desc">A fully playable Tic Tac Toe game with a modern neon UI, score tracker,
+                            win detection, and smooth restart flow — built as a web development final project.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- ── CARD 3: Bootstrap Project ── -->
+                <a href="https://github.com/bhuvishag07/bootstrap" target="_blank" rel="noopener noreferrer"
+                    class="project-card glass-card project-link" id="project-3">
+                    <div class="project-img-wrap">
+                        <img src="bootstrap.png" alt="Bootstrap Responsive Website" class="project-img"
+                            loading="lazy" />
+                    </div>
+                    <div class="project-body">
+                        <div class="project-top">
+                            <h3 class="project-title">Bootstrap Website Project</h3>
+                            <span class="icon-link" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg>
+                            </span>
+                        </div>
+                        <p class="project-desc">A fully responsive multi-section website built with Bootstrap 5 —
+                            featuring a navbar, hero banner, pricing cards, gallery, and a contact form with
+                            mobile-first design.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Bootstrap 5</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- ── CARD 4: JavaScript Project ── -->
+                <a href="https://github.com/bhuvishag07/javascript-project" target="_blank" rel="noopener noreferrer"
+                    class="project-card glass-card project-link" id="project-4">
+                    <div class="project-img-wrap">
+                        <img src="javascript.png" alt="JavaScript Interactive Project" class="project-img"
+                            loading="lazy" />
+                    </div>
+                    <div class="project-body">
+                        <div class="project-top">
+                            <h3 class="project-title">JavaScript Interactive Project</h3>
+                            <span class="icon-link" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg>
+                            </span>
+                        </div>
+                        <p class="project-desc">A dynamic front-end JavaScript project featuring DOM manipulation,
+                            event-driven interactions, and real-time data updates.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">DOM API</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- ── CARD 5: Python Projects ── -->
+                <a href="https://github.com/bhuvishag07/diceroller" target="_blank" rel="noopener noreferrer"
+                    class="project-card glass-card project-link" id="project-5">
+                    <div class="project-img-wrap">
+                        <img src="python.png" alt="Python Data Project" class="project-img" loading="lazy" />
+                    </div>
+                    <div class="project-body">
+                        <div class="project-top">
+                            <h3 class="project-title">Python Projects Collection</h3>
+                            <span class="icon-link" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg>
+                            </span>
+                        </div>
+                        <p class="project-desc">A series of Python projects: Dice Roller, Heart Graph with Matplotlib,
+                             and more — all built to sharpen core Python fundamentals.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">Random</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- ── CARD 6: Expense Tracker ── -->
+                <a href="https://github.com/bhuvishag07/expense-tracker" target="_blank" rel="noopener noreferrer"
+                    class="project-card glass-card featured project-link" id="project-6">
+                    <div class="project-img-wrap">
+                        <img src="expensetracker.png" alt="Expense Tracker" class="project-img" loading="lazy" />
+                    </div>
+                    <div class="project-body">
+                        <div class="featured-label">⭐ Top Project</div>
+                        <div class="project-top">
+                            <h3 class="project-title">Expense Tracker</h3>
+                            <span class="icon-link" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg>
+                            </span>
+                        </div>
+                        <p class="project-desc">A Python expense tracker that logs and categorises daily expenses
+                            using lists, loops, and user input — with balance summaries and persistent tracking. Live on
+                            GitHub.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">File I/O</span>
+                            <span class="tech-tag">Lists &amp; Loops</span>
+                            <span class="tech-tag">CLI</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- ── CARD 7: Snowflake Graph ── -->
+                <a href="https://github.com/bhuvishag07/snowflake" target="_blank" rel="noopener noreferrer"
+                    class="project-card glass-card project-link" id="project-7">
+                    <div class="project-img-wrap snowflake-art">
+                        <div class="snowflake-canvas">
+                            <svg viewBox="0 0 200 200" class="snowflake-svg" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Main arms -->
+                                <line x1="100" y1="20" x2="100" y2="180" stroke="#a78bfa" stroke-width="2"
+                                    opacity="0.9" />
+                                <line x1="20" y1="100" x2="180" y2="100" stroke="#a78bfa" stroke-width="2"
+                                    opacity="0.9" />
+                                <line x1="37" y1="37" x2="163" y2="163" stroke="#a78bfa" stroke-width="2"
+                                    opacity="0.9" />
+                                <line x1="163" y1="37" x2="37" y2="163" stroke="#a78bfa" stroke-width="2"
+                                    opacity="0.9" />
+                                <!-- Branch ticks on vertical arm -->
+                                <line x1="86" y1="55" x2="100" y2="42" stroke="#c4b5fd" stroke-width="1.5" />
+                                <line x1="114" y1="55" x2="100" y2="42" stroke="#c4b5fd" stroke-width="1.5" />
+                                <line x1="86" y1="145" x2="100" y2="158" stroke="#c4b5fd" stroke-width="1.5" />
+                                <line x1="114" y1="145" x2="100" y2="158" stroke="#c4b5fd" stroke-width="1.5" />
+                                <!-- Branch ticks on horizontal arm -->
+                                <line x1="55" y1="86" x2="42" y2="100" stroke="#c4b5fd" stroke-width="1.5" />
+                                <line x1="55" y1="114" x2="42" y2="100" stroke="#c4b5fd" stroke-width="1.5" />
+                                <line x1="145" y1="86" x2="158" y2="100" stroke="#c4b5fd" stroke-width="1.5" />
+                                <line x1="145" y1="114" x2="158" y2="100" stroke="#c4b5fd" stroke-width="1.5" />
+                                <!-- Branch ticks on diagonal arms -->
+                                <line x1="62" y1="55" x2="55" y2="62" stroke="#e9d5ff" stroke-width="1.2" />
+                                <line x1="62" y1="145" x2="55" y2="138" stroke="#e9d5ff" stroke-width="1.2" />
+                                <line x1="138" y1="55" x2="145" y2="62" stroke="#e9d5ff" stroke-width="1.2" />
+                                <line x1="138" y1="145" x2="145" y2="138" stroke="#e9d5ff" stroke-width="1.2" />
+                                <!-- Center glow circle -->
+                                <circle cx="100" cy="100" r="8" fill="#7c3aed" opacity="0.9" />
+                                <circle cx="100" cy="100" r="4" fill="#c4b5fd" />
+                                <!-- Tip dots -->
+                                <circle cx="100" cy="22" r="3" fill="#a78bfa" />
+                                <circle cx="100" cy="178" r="3" fill="#a78bfa" />
+                                <circle cx="22" cy="100" r="3" fill="#a78bfa" />
+                                <circle cx="178" cy="100" r="3" fill="#a78bfa" />
+                                <circle cx="39" cy="39" r="2.5" fill="#c4b5fd" />
+                                <circle cx="161" cy="39" r="2.5" fill="#c4b5fd" />
+                                <circle cx="39" cy="161" r="2.5" fill="#c4b5fd" />
+                                <circle cx="161" cy="161" r="2.5" fill="#c4b5fd" />
+                            </svg>
+                        </div>
+                        <div class="snowflake-code-hint">
+                            <span class="snow-kw">import</span> turtle<br />
+                            <span class="snow-kw">def</span> <span class="snow-fn">snowflake</span>(length,
+                            depth):<br />
+                            &nbsp;&nbsp;<span class="snow-cm"># draw &amp; recurse...</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-top">
+                            <h3 class="project-title">Snowflake Graph</h3>
+                            <span class="icon-link" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg>
+                            </span>
+                        </div>
+                        <p class="project-desc">A Python graphics project using the Turtle library to draw a recursive
+                            fractal snowflake pattern. Demonstrates loops, functions, and geometric recursion.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Recursion</span>
+                            <span class="tech-tag">Graphics</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── SKILLS ─── -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-tag">03. Skills</div>
+            <h2 class="section-title">My Toolkit</h2>
+            <p class="section-sub">Technologies and tools I've been learning and working with.</p>
+
+            <div class="skills-wrap">
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" id="skill-html">
+                            <span class="skill-icon">🟠</span> HTML
+                        </span>
+                        <span class="skill-tag" id="skill-css">
+                            <span class="skill-icon">🔵</span> CSS
+                        </span>
+                        <span class="skill-tag" id="skill-js">
+                            <span class="skill-icon">🟡</span> JavaScript
+                        </span>
+                        <span class="skill-tag" id="skill-cpp">
+                            <span class="skill-icon">🔷</span> C++
+                        </span>
+                        <span class="skill-tag" id="skill-python">
+                            <span class="skill-icon">🐍</span> Python
+                        </span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Tools & Analytics</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" id="skill-excel">
+                            <span class="skill-icon">📗</span> Excel
+                        </span>
+                        <span class="skill-tag" id="skill-data">
+                            <span class="skill-icon">📊</span> Data Analysis
+                        </span>
+                        <span class="skill-tag" id="skill-pandas">
+                            <span class="skill-icon">🐼</span> Pandas
+                        </span>
+                        <span class="skill-tag" id="skill-git">
+                            <span class="skill-icon">🔀</span> Git
+                        </span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Exploring</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag learning" id="skill-ml">
+                            <span class="skill-icon">🤖</span> Problem Solving 
+                        <span class="skill-tag learning" id="skill-nn">
+                            <span class="skill-icon">🧠</span> Logic Building 
+                        </span>
+                        <span class="skill-tag learning" id="skill-ds">
+                            <span class="skill-icon">📈</span> Self Learning
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── SYSTEM ─── -->
+    <section id="system">
+        <div class="container">
+            <div class="section-tag">04. System</div>
+            <h2 class="section-title">System Status</h2>
+
+            <div class="terminal-wrap">
+                <div class="terminal glass-card" id="terminal">
+                    <div class="terminal-bar">
+                        <div class="t-dot t-red"></div>
+                        <div class="t-dot t-yellow"></div>
+                        <div class="t-dot t-green"></div>
+                        <span class="t-title">bhuvisha@portfolio ~ </span>
+                    </div>
+                    <div class="terminal-body" id="terminal-body">
+                        <!-- Lines injected by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── CONTACT ─── -->
+    <section id="contact">
+        <div class="container contact-inner">
+            <div class="section-tag">05. Contact</div>
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-sub">I'm always open to new opportunities, collaborations, or just a friendly chat about
+                tech. Reach out!</p>
+
+            <div class="contact-btns">
+                <a href="mailto:bhuvishagohil07@gmail.com" class="contact-btn" id="contact-email">
+                    <span class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                    </span>
+                    Email Me
+                </a>
+                <a href="https://github.com/bhuvishag07" target="_blank" rel="noopener noreferrer" class="contact-btn"
+                    id="contact-github">
+                    <span class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                        </svg>
+                    </span>
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/bhuvisha-gohil-a81864386/" target="_blank" rel="noopener noreferrer"
+                    class="contact-btn" id="contact-linkedin">
+                    <span class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </span>
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer>
+        <p>Designed &amp; Built by <span class="accent">Bhuvisha Gohil</span> · 2026</p>
+        <p class="footer-sub">Made with ❤️ </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
