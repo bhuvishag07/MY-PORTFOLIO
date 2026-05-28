@@ -76,7 +76,7 @@ export const projects = [
         title: "Attendance Calculator",
         description: "Python utility calculating attendance percentage efficiently for academic tracking.",
         techStack: ["Python"],
-        repoLink: "https://github.com/bhuvishagohil/python-project-",
+        repoLink: "https://github.com/bhuvishag07/python-project-",
         image: "/attendance-calculator.svg"
     },
     {
@@ -84,7 +84,7 @@ export const projects = [
         title: "Adventure Game",
         description: "Choice-based interactive storytelling game demonstrating Python conditionals and branching logic.",
         techStack: ["Python"],
-        repoLink: "https://github.com/bhuvishagohil/adventure-game",
+        repoLink: "https://github.com/bhuvishag07/adventure-game",
         image: "/adventure-game.svg"
     },
     {
@@ -92,7 +92,7 @@ export const projects = [
         title: "Countdown Timer",
         description: "Simple countdown utility practicing timing functions and loop control.",
         techStack: ["Python"],
-        repoLink: "https://github.com/bhuvishagohil/countdown-timer-",
+        repoLink: "https://github.com/bhuvishag07/countdown-timer-",
         image: "/countdown-timer.svg"
     },
     {
@@ -100,7 +100,7 @@ export const projects = [
         title: "Expense Tracker",
         description: "Expense management utility for tracking daily spending calculations and financial overview.",
         techStack: ["Python"],
-        repoLink: "https://github.com/bhuvishagohil/expense-tracker",
+        repoLink: "https://github.com/bhuvishag07/expense-tracker",
         image: "/expense-tracker.svg"
     },
     {
@@ -108,7 +108,7 @@ export const projects = [
         title: "Dice Roller",
         description: "Randomized dice simulator practicing loops and probability logic for game mechanics.",
         techStack: ["Python"],
-        repoLink: "https://github.com/bhuvishagohil/dicerollermy",
+        repoLink: "https://github.com/bhuvishag07/diceroller",
         image: "/dice-roller.svg"
     }
 ];
