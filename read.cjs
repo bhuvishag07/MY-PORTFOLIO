@@ -1,0 +1,1 @@
+const fs = require('fs'); const pdf = require('pdf-parse'); const pdfFn = typeof pdf === 'function' ? pdf : pdf.default; const dataBuffer = fs.readFileSync('../updated cv.pdf'); pdfFn(dataBuffer).then(data => console.log(data.text)).catch(console.error);

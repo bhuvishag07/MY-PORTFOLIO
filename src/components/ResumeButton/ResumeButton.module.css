@@ -1,0 +1,27 @@
+.resumeBtn {
+    padding: 14px 32px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 8px;
+    transition: var(--transition-smooth);
+    letter-spacing: 0.03em;
+}
+
+.resumeBtn:hover {
+    background: var(--glass-hover);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: var(--shadow-card);
+}
+
+:root.light .resumeBtn:hover {
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.resumeBtn svg {
+    width: 20px;
+    height: 20px;
+}

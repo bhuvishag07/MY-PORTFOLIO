@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#09080f"/> 
+      <stop offset="100%" stop-color="#1b1936"/> 
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" rx="40" fill="url(#bg)" />
+  <circle cx="400" cy="330" r="180" fill="#171421" stroke="#c4a4f7" stroke-width="20" />
+  <line x1="400" y1="340" x2="400" y2="210" stroke="#fff" stroke-width="20" stroke-linecap="round" />
+  <line x1="385" y1="320" x2="500" y2="330" stroke="#e9d5ff" stroke-width="20" stroke-linecap="round" />
+  <rect x="360" y="150" width="80" height="40" rx="14" fill="#4f46e5" />
+  <text x="400" y="140" fill="#fff" font-family="Outfit, sans-serif" font-size="32" font-weight="700" text-anchor="middle">Timer</text>
+</svg>

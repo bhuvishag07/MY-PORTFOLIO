@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#08070d" />
+      <stop offset="100%" stop-color="#1f163a" />
+    </linearGradient>
+    <linearGradient id="cardGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#4f46e5" stop-opacity="0.05" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" rx="40" fill="url(#bg)" />
+  <g opacity="0.14">
+    <circle cx="160" cy="200" r="110" fill="#c4a4f7" />
+    <circle cx="680" cy="170" r="80" fill="#8b5cf6" />
+  </g>
+  <g filter="url(#blur)">
+    <rect x="120" y="120" width="560" height="360" rx="44" fill="url(#cardGlow)" />
+  </g>
+  <rect x="140" y="140" width="520" height="320" rx="44" fill="#11101f" stroke="#7c3aed" stroke-opacity="0.35" stroke-width="2" />
+
+  <g transform="translate(180 190)">
+    <rect x="0" y="0" width="160" height="220" rx="28" fill="#27244f" />
+    <rect x="24" y="36" width="112" height="160" rx="24" fill="#8b5cf6" />
+    <rect x="42" y="52" width="76" height="24" rx="12" fill="#ede9fe" />
+    <rect x="42" y="96" width="76" height="16" rx="8" fill="#c4b5fd" />
+    <rect x="42" y="126" width="76" height="16" rx="8" fill="#e0d7fe" />
+    <circle cx="80" cy="188" r="16" fill="#fff" opacity="0.85" />
+  </g>
+
+  <g transform="translate(360 170)">
+    <rect x="0" y="0" width="260" height="228" rx="22" fill="#1f1b3f" />
+    <rect x="20" y="20" width="220" height="24" rx="12" fill="#7c3aed" />
+    <rect x="20" y="64" width="180" height="14" rx="7" fill="#dbeafe" />
+    <rect x="20" y="92" width="200" height="14" rx="7" fill="#c4b5fd" />
+    <rect x="20" y="120" width="120" height="14" rx="7" fill="#dbeafe" />
+    <rect x="20" y="150" width="98" height="32" rx="16" fill="#2563eb" />
+    <text x="40" y="172" fill="#f8fafc" font-family="Outfit, sans-serif" font-size="16" font-weight="700">Try Now</text>
+    <rect x="20" y="198" width="180" height="14" rx="7" fill="#c4b5fd" opacity="0.45" />
+    <rect x="20" y="228" width="250" height="14" rx="7" fill="#c4b5fd" opacity="0.45" />
+  </g>
+
+  <rect x="150" y="390" width="500" height="20" rx="10" fill="#2a2550" />
+  <rect x="150" y="420" width="200" height="22" rx="11" fill="#7c3aed" />
+  <rect x="150" y="455" width="320" height="22" rx="11" fill="#4f46e5" />
+  <rect x="150" y="490" width="260" height="22" rx="11" fill="#2563eb" />
+
+  <text x="400" y="550" fill="#e2e8f0" font-family="Outfit, sans-serif" font-size="36" font-weight="700" text-anchor="middle">Bootstrap Skincare</text>
+</svg>

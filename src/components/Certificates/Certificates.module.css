@@ -1,0 +1,116 @@
+.certSection {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-family: var(--font-mono);
+    color: var(--text-primary);
+}
+
+.line {
+    height: 1px;
+    flex: 1;
+    background: linear-gradient(90deg, rgba(196, 164, 247, 0.4), transparent);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    box-shadow: var(--shadow-lifted);
+    border-color: rgba(196, 164, 247, 0.25);
+}
+
+.image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cardTitle {
+    padding: 20px;
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal {
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-primary);
+}
+
+.modalImage {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.modalContent {
+    padding: 30px;
+}
+
+.modalTitle {
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+}
+
+.modalDesc {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.closeBtn {
+    padding: 10px 24px;
+    background: var(--accent-purple-dim);
+    border: 1px solid var(--accent-purple);
+    color: var(--accent-purple);
+    border-radius: 6px;
+    font-family: var(--font-mono);
+    transition: var(--transition-smooth);
+}
+
+.closeBtn:hover {
+    background: rgba(196, 164, 247, 0.25);
+    box-shadow: var(--glow-purple);
+    color: #fff;
+}

@@ -1,0 +1,156 @@
+.loader {
+    position: fixed;
+    inset: 0;
+    background: #080808;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 9999;
+    overflow: hidden;
+    padding: 0 6vw;
+}
+
+/* Expanding horizontal line */
+.line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(196, 164, 247, 0.2) 20%,
+            rgba(196, 164, 247, 0.5) 50%,
+            rgba(196, 164, 247, 0.2) 80%,
+            transparent);
+    transform-origin: center;
+    transform: translateY(-50%);
+}
+
+/* Purple ambient glow */
+.glowOrb {
+    position: absolute;
+    width: 80vw;
+    height: 80vw;
+    max-width: 900px;
+    max-height: 900px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse, rgba(196, 164, 247, 0.12) 0%, transparent 70%);
+    top: 50%;
+    left: -20vw;
+    transform: translateY(-50%);
+    pointer-events: none;
+    filter: blur(80px);
+}
+
+/* All content stacked left-aligned */
+.centerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 10;
+    width: 100%;
+    gap: 0;
+}
+
+/* Each name on its own row, overflow hidden creates the reveal mask */
+.nameRow {
+    overflow: hidden;
+    line-height: 0.88;
+    display: block;
+}
+
+/* MASSIVE name text — fills nearly the full viewport width */
+.nameWord {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(4.5rem, 14vw, 15rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    display: block;
+    line-height: 0.88;
+    white-space: nowrap;
+}
+
+/* Surname gets a soft purple tint for visual hierarchy */
+.nameAccent {
+    color: #c4a4f7;
+}
+
+/* Purple underline that draws left-to-right after names settle */
+.nameUnderline {
+    width: 72%;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(196, 164, 247, 0.8), transparent);
+    transform-origin: left center;
+    margin-top: 16px;
+}
+
+/* Typing subtitle */
+.subtitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(0.8rem, 1.8vw, 1.15rem);
+    color: rgba(255, 255, 255, 0.35);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-top: 32px;
+    min-height: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.typedText {
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 0 0 8px rgba(183, 142, 255, 0.7);
+}
+
+.cursor {
+    animation: blink 0.9s step-end infinite;
+    color: rgba(196, 164, 247, 0.75);
+    font-weight: 300;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.eduBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: white;
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    margin-top: 20px;
+    line-height: 1.9;
+    text-shadow: 0 0 8px rgba(183, 142, 255, 0.5);
+}
+
+/* Mobile — keep names readable but smaller */
+@media (max-width: 600px) {
+    .loader {
+        padding: 0 4vw;
+    }
+
+    .nameWord {
+        font-size: clamp(3rem, 16vw, 8rem);
+        letter-spacing: -0.01em;
+    }
+
+    .nameUnderline {
+        width: 90%;
+    }
+}

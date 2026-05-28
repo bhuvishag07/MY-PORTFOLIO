@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#08080d" />
+      <stop offset="100%" stop-color="#211a3e" />
+    </linearGradient>
+    <filter id="softglow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="600" rx="40" fill="url(#bg)" />
+  <g filter="url(#softglow)" stroke="#c4a4f7" stroke-width="18" fill="none">
+    <path d="M160 220h480v240H160z" />
+    <path d="M160 220l240 120 240-120" />
+  </g>
+  <g fill="#7c3aed" stroke="#fff" stroke-width="10">
+    <path d="M200 240h260l-130 82z" fill="#7c3aed" />
+    <path d="M200 240l130 82 130-82" fill="#8b5cf6" />
+  </g>
+  <g fill="#dbeafe" font-family="Outfit, sans-serif" font-size="34" font-weight="700">
+    <text x="400" y="360" text-anchor="middle">LearnHub</text>
+  </g>
+  <g fill="#e2e8f0" opacity="0.75">
+    <text x="400" y="410" font-family="Outfit, sans-serif" font-size="18" text-anchor="middle">E-learning platform with polished UI and course cards</text>
+  </g>
+  <g fill="#a78bfa">
+    <circle cx="260" cy="470" r="12" />
+    <circle cx="320" cy="470" r="12" />
+    <circle cx="380" cy="470" r="12" />
+  </g>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#08080c" />
+      <stop offset="100%" stop-color="#1d1636" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="600" rx="40" fill="url(#bg)" />
+  <g filter="url(#glow)">
+    <rect x="120" y="140" width="560" height="320" rx="42" fill="#14121f" stroke="#7c3aed" stroke-width="14" />
+  </g>
+  <g fill="#e2e8f0" font-family="Outfit, sans-serif" font-weight="700">
+    <text x="160" y="220" font-size="40">Attendance</text>
+    <text x="160" y="270" font-size="28">Calculator</text>
+  </g>
+  <g fill="#2e2a56" stroke="none">
+    <rect x="160" y="320" width="460" height="38" rx="19" />
+    <rect x="160" y="390" width="380" height="38" rx="19" />
+    <rect x="160" y="460" width="420" height="38" rx="19" />
+  </g>
+  <g>
+    <rect x="160" y="320" width="300" height="38" rx="19" fill="#8b5cf6" />
+    <rect x="160" y="390" width="260" height="38" rx="19" fill="#5b21b6" />
+    <rect x="160" y="460" width="340" height="38" rx="19" fill="#2563eb" />
+  </g>
+  <g fill="#e2e8f0" font-family="Outfit, sans-serif" font-size="22">
+    <text x="620" y="345" text-anchor="end">96%</text>
+    <text x="620" y="415" text-anchor="end">84%</text>
+    <text x="620" y="485" text-anchor="end">92%</text>
+  </g>
+  <g fill="#94a3b8" font-family="Outfit, sans-serif" font-size="18">
+    <text x="160" y="315">Alice</text>
+    <text x="160" y="385">Brian</text>
+    <text x="160" y="455">Chloe</text>
+  </g>
+</svg>

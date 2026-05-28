@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&display=swap');
+
+:root {
+  /* Dark Mode (Default) — Matte Black, White, Soft Purple */
+  --bg-primary: #080808;
+  --bg-secondary: #111111;
+  --text-primary: #ffffff;
+  --text-secondary: #888888;
+  --text-muted: #444444;
+
+  --accent-purple: #c4a4f7;
+  --accent-purple-dim: rgba(196, 164, 247, 0.15);
+  --accent-purple-glow: rgba(196, 164, 247, 0.25);
+
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.07);
+  --glass-hover: rgba(255, 255, 255, 0.06);
+
+  --font-sans: 'Outfit', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --glow-purple: 0 0 20px rgba(196, 164, 247, 0.2), 0 0 60px rgba(196, 164, 247, 0.08);
+  --glow-white: 0 0 20px rgba(255, 255, 255, 0.1), 0 0 60px rgba(255, 255, 255, 0.04);
+
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.6);
+  --shadow-lifted: 0 20px 60px rgba(0, 0, 0, 0.7), 0 0 30px rgba(196, 164, 247, 0.1);
+
+  /* Terminal & modal backgrounds (theme aware) */
+  --terminal-bg: rgba(10, 10, 10, 0.85);
+  --overlay-bg: rgba(0, 0, 0, 0.45);
+
+  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ========================= */
+/* ✅ LIGHT MODE FIXED ONLY */
+/* ========================= */
+
+:root.light {
+  --bg-primary: #fafafa;
+  --bg-secondary: #ffffff;
+  --text-primary: #0a0a0a;
+  --text-secondary: #5a5a5a;
+  --text-muted: #aaaaaa;
+
+  --accent-purple: #7c3aed;
+  --accent-purple-dim: rgba(124, 58, 237, 0.08);
+  --accent-purple-glow: rgba(124, 58, 237, 0.15);
+
+  /* FIXED: was too transparent → causing grey wash */
+  --glass-bg: rgba(255, 255, 255, 0.92);
+  --glass-border: rgba(0, 0, 0, 0.08);
+  --glass-hover: rgba(124, 58, 237, 0.04);
+
+  --glow-purple: 0 4px 20px rgba(124, 58, 237, 0.15);
+  --glow-white: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lifted: 0 12px 40px rgba(124, 58, 237, 0.15), 0 4px 16px rgba(0, 0, 0, 0.08);
+
+  /* Terminal & modal backgrounds for light theme */
+  --terminal-bg: rgba(255, 255, 255, 0.95);
+  --overlay-bg: rgba(0, 0, 0, 0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.4s ease, color 0.4s ease;
+  overflow-x: hidden;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  background: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--glass-border);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-purple-dim);
+}
+
+/* Glass Card Utility */
+.glass-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 16px;
+  transition: var(--transition-smooth);
+}
+
+/* Section Header Utility */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.section-header-line {
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(90deg, var(--accent-purple), transparent);
+  opacity: 0.3;
+}
+
+/* Text Selection */
+::selection {
+  background: var(--accent-purple-dim);
+  color: var(--text-primary);
+}

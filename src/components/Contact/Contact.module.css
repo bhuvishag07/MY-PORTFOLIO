@@ -1,0 +1,233 @@
+.contactSection {
+    padding: 60px 20px 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-family: var(--font-mono);
+    color: var(--text-primary);
+}
+
+.line {
+    height: 1px;
+    flex: 1;
+    background: linear-gradient(90deg, rgba(196, 164, 247, 0.3), transparent);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 120px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitle {
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.description {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+.socialButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.socialBtn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 24px;
+    font-size: 1.05rem;
+    color: var(--text-primary);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.socialBtn:hover {
+    transform: translateX(8px);
+    background: var(--glass-hover);
+    border-color: rgba(196, 164, 247, 0.2);
+    box-shadow: var(--shadow-card);
+}
+
+.socialBtn svg {
+    width: 22px;
+    height: 22px;
+    color: var(--accent-purple);
+}
+
+.resumeWrapper {
+    margin-top: 24px;
+}
+
+.form {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formGroup label {
+    font-family: var(--font-mono);
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.formGroup input,
+.formGroup textarea {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    padding: 14px 18px;
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    transition: var(--transition-smooth);
+    outline: none;
+}
+
+:root.light .formGroup input,
+:root.light .formGroup textarea {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+    border-color: var(--accent-purple);
+    box-shadow: var(--glow-purple);
+    background: var(--glass-hover);
+}
+
+.inputError {
+    border-color: #ff5f56 !important;
+}
+
+.errorText {
+    color: #ff5f56;
+    font-size: 0.85rem;
+    font-family: var(--font-mono);
+}
+
+.submitBtn {
+    background: var(--accent-purple-dim);
+    border: 1px solid var(--accent-purple);
+    color: var(--accent-purple);
+    padding: 16px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: var(--transition-smooth);
+    margin-top: 10px;
+    letter-spacing: 0.02em;
+}
+
+.submitBtn:hover:not(:disabled) {
+    background: rgba(196, 164, 247, 0.25);
+    box-shadow: var(--glow-purple);
+    color: #fff;
+}
+
+.submitBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.successMessage {
+    color: #27c93f;
+    text-align: center;
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    margin-top: 10px;
+}
+
+.errorMessage {
+    color: #ff5f56;
+    text-align: center;
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    margin-top: 10px;
+}
+
+/* Final CTA */
+.finalCta {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 80px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.finalCta h2 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 20px;
+    color: var(--text-primary);
+}
+
+.finalCta p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+.ctaBtn {
+    display: inline-block;
+    padding: 16px 40px;
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    transition: var(--transition-smooth);
+}
+
+:root.light .ctaBtn {
+    background: #000;
+    color: #fff;
+}
+
+.ctaBtn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15);
+}
+
+:root.light .ctaBtn:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 900px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
