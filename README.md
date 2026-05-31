@@ -235,19 +235,7 @@ Deployment workflow:
 * GitHub repository setup
 * Debugging blank screen issues during deployment
 
----
 
-# 🔮 Future Improvements
-
-* Add dark/light mode
-* Add animations using Framer Motion
-* Add downloadable resume feature
-* Improve UI/UX design
-* Add backend contact form
-* Improve SEO optimization
-* Add more interactive project cards
-
----
 
 # 📚 Learning Outcomes
 
